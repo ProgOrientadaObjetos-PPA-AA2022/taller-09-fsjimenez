@@ -48,7 +48,7 @@ public class Prestamo {
     
     @Override
     public String toString(){
-        String cadena = String.format("Beneficiario: %s\nNúmero de meses a"
+        String cadena = String.format("Beneficiario: \n%s\nNúmero de meses a"
                 + " diferir: %d\nCiudad del préstamo: %s\n", beneficiario,
                                                           meses,
                                                           ciudad);

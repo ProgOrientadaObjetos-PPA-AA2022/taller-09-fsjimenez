@@ -78,7 +78,7 @@ public class Ejecutor {
                     presAuto.calcularValorMensual();
                     presAuto.establecerCiudad(ciudad);
                     
-                    cadenaAuto = String.format("Prestamo de Automóvil %s\n\n%s%s\n"
+                    cadenaAuto = String.format("Prestamo de Automóvil %s\n%s%s\n"
                             + "----------------------------------------------",
                                                 i, cadenaAuto, presAuto);
                     
@@ -104,7 +104,7 @@ public class Ejecutor {
                     presEdu.establecerValorCarrera(valorCarrera);
                     presEdu.calcularValorMensual();
                     
-                    cadenaEdu = String.format("Prestamo Educativo %s\n\n%s%s\n"
+                    cadenaEdu = String.format("Prestamo Educativo %s\n%s%s\n"
                             + "----------------------------------------------",
                                                 j, cadenaEdu, presEdu);
                 }
@@ -112,8 +112,8 @@ public class Ejecutor {
         } while (opc != 0);
         
         
-        cadenaFinal = String.format("Lista de Préstamo Automóvil\n%s\n"
-                + "Lista de Préstamo Educativo\n%s", cadenaAuto, cadenaEdu);
+        cadenaFinal = String.format("Lista de Préstamo Automóvil\n\n%s\n"
+                + "Lista de Préstamo Educativo\n\n%s", cadenaAuto, cadenaEdu);
         System.out.println(cadenaFinal);
     }
 }

@@ -25,4 +25,11 @@ public class InstitucionEducativa {
     public String obtenerSiglas(){
         return siglas;
     }
+    
+    @Override
+    public String toString(){
+        String cadena = String.format("Nombre de la Institucion: %s\nSiglas: %s",
+                                                nombre, siglas);
+        return cadena;
+    }
 }
